@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+	<style>
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
+</head>
+<body>
+
+
+<div id="main" style="width: 1366px; margin: auto;">
+    
+    <img src="../18-1106入口頁_B.png" usemap="#map_1" width='100%'>
+    <map name="map_1">            
+        <area href="https://dsdpdemo.github.io/15/"
+            alt="網美也不知道的低調景點！讓愛環境告訴你" 
+            title="網美也不知道的低調景點！讓愛環境告訴你" 
+            shape="rect" coords="185,1125,420,1398" />
+    </map>
+    <!-- shadow -->
+    <div class="row"></div>
+</div>
+
+
+<script>
+    $(document).ready(function(e) {
+    $('img[map_1]').rwdImageMaps();
+});
+</script>
+
+
+</body>
+</html>
