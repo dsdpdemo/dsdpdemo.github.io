@@ -15,12 +15,25 @@
 	div {
 		width: 100%;
 	}
-	img[usemap] {
+	img[map_1] {
 		border: none;
 		height: auto;
 		max-width: 100%;
 		width: auto;
 	}
+    #iframe_block{   
+        position: absolute;   
+        left:194px;   
+        top:480px;             
+        right:0;   
+        bottom:0;   
+        border:none;   
+    }   
+    iframe{   
+        width:640px;   
+        height: 365px;   
+        border:none;       
+    }  
 	</style>
 </head>
 <body>
@@ -36,7 +49,11 @@
             shape="rect" coords="185,1125,420,1398" />
     </map>
     <!-- shadow -->
-    <div class="row"></div>
+    <div id="iframe_block">
+    <iframe src="https://player.vimeo.com/video/241465003" 
+    frameborder="0" 
+    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 </div>
 
 
