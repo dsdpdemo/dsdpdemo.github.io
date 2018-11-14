@@ -1,7 +1,18 @@
-
-<img src="../15.png" id="map-image" style="width: 2384px; max-width: 100%; height: auto;" alt="" usemap="#map" />
-<map name="map">
-    <area shape="rect" coords="234, 1572, 499, 1614" 
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+<style>
+body {font-family: Helvetica, Arial, sans-serif;}
+h1 {font-size: 20px;}
+div {width: 100%;}
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+</style></head><body>
+<div id="main" style="width: 1366px; margin: auto;">
+    <img src="../15.png" usemap="#map_1" width='100%'>
+    <map name="map_1">
+       <area shape="rect" coords="234, 1572, 499, 1614" 
     href="https://ropin13.github.io/%E3%80%90App%E6%8E%A8%E8%96%A6%E3%80%91%E3%80%8C%E7%92%B0%E5%A2%83%E5%8D%B3%E6%99%82%E9%80%9A%E3%80%8D%EF%BC%9A%E9%9A%A8%E6%99%82%E9%97%9C%E6%B3%A8%E4%BB%8A%E5%A4%A9%E7%9A%84PM2.5%E7%A9%BA%E6%B1%A1%E6%8C%87%E6%95%B8%E6%98%AF%E5%90%A6%E8%B6%85%E6%A8%99%EF%BC%81/"
             alt="【App推薦】「環境即時通」：隨時關注今天的PM2.5空污指數是否超標！" 
             title="【App推薦】「環境即時通」：隨時關注今天的PM2.5空污指數是否超標！" 
@@ -14,7 +25,6 @@
     
     />
     <area shape="rect" coords="1033, 2403, 1058, 2432" href="https://social-plugins.line.me/lineit/share?url=https://dsdpdemo.github.io/15/"/>
-</map>
-<script src="../jquery.min.js"></script>
-<script src="../imageMapResizer.min.js"></script>
-<script>$(document).ready(function(e){$("map").imageMapResize();});</script>
+
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
