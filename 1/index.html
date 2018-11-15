@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <script src="../jquery.min.js"></script>
@@ -9,8 +10,8 @@ div {width: 100%;}
 img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
 </style></head><body>
 <div id="main" style="width: 1366px; margin: auto;">
-<img src="1.png" id="map-image" style="width: 1366px; max-width: 100%; height: auto;" alt="" usemap="#map" />
-<map name="map">
+    <img src="../15.png" usemap="#map_1" style=“xxxx”>
+    <map name=“map_1”>
     <area shape="rect" coords="895, 59, 1041, 109" />
 href="https://dsdpdemo.github.io/19/"/>
 
@@ -38,7 +39,5 @@ href=" https://social-plugins.line.me/lineit/share?url=https://dsdpdemo.github.i
     <area shape="rect" coords="276, 2, 475, 46" />
 href="/dsdpdemo.github.io/%E5%85%A5%E5%8F%A3%E9%A0%81/"/>
 
-</map>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="imageMapResizer.min.js"></script>
-<script>$(document).ready(function(e){$("map").imageMapResize();});</script>
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
