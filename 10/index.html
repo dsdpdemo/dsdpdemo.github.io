@@ -1,9 +1,77 @@
-<script type="text/javascript" src="../jquery.min.js"></script> 
-<div id="mydiv" style="overflow:auto; overflow-y:hidden;width:100%">
-   <img id="im" src="../10.png" />
-</div>
-<script type="text/javascript"> 
-var outer=document.getElementById('mydiv').offsetWidth
-var inner=document.getElementById('im').offsetWidth;
-$('#mydiv').scrollLeft((inner-outer)/2);
-</script>
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @dsdpdemo Sign out
+0
+0 0 dsdpdemo/dsdpdemo.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+dsdpdemo.github.io/9/index.html
+7e22996  2 minutes ago
+@dsdpdemo dsdpdemo Update index.html
+     
+48 lines (42 sloc)  1.6 KB
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+<style>
+body {font-family: Helvetica, Arial, sans-serif;}
+h1 {font-size: 20px;}
+div {width: 100%;}
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+</style></head><body>
+<div id="main" style="width: 1366px; margin: auto;">
+    <img src="../10.png" usemap="#map_1" width='100%'>
+    <map name="map_1">
+       <area shape="rect" coords="275, 976, 655, 1038" 
+href="https://dsdpdemo.github.io/1/"
+            alt="相關連結1" 
+            title="相關連結1" 
+    />
+
+       <area shape="rect" coords="275, 1040, 656, 1096" 
+href="https://play.google.com/store/apps/details?id=com.esri.arcgis.android.idt.EPA.HL&hl=zh_TW"
+            alt="相關連結2" 
+            title="相關連結2" 
+    />
+       <area shape="rect" coords="276, 1097, 656, 1167" 
+href="https://itunes.apple.com/tw/app/%E7%92%B0%E5%A2%83%E5%8D%B3%E6%99%82%E9%80%9A/id585493633?mt=8"
+            alt="相關連結3" 
+            title="相關連結3" 
+    />
+
+       <area shape="rect" coords="275, 1168, 656, 1234" 
+href="https://dsdpdemo.github.io/19/"
+            alt="相關連結4" 
+            title="相關連結4" 
+    />
+
+     
+    <area shape="rect" coords="277, 1, 478, 48" 
+    href="https://dsdpdemo.github.io/%E5%85%A5%E5%8F%A3%E9%A0%81/"
+            alt="入口頁" 
+            title="入口頁" 
+    />
+
+    <area shape="rect" coords="998, 71, 1087, 131" href="https://social-plugins.line.me/lineit/share?url=https://dsdpdemo.github.io/10/"/>
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
