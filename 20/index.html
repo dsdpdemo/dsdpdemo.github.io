@@ -1,9 +1,52 @@
-<script type="text/javascript" src="../jquery.min.js"></script> 
-<div id="mydiv" style="overflow:auto; overflow-y:hidden;width:100%">
-   <img id="im" src="../20.png" />
-</div>
-<script type="text/javascript"> 
-var outer=document.getElementById('mydiv').offsetWidth
-var inner=document.getElementById('im').offsetWidth;
-$('#mydiv').scrollLeft((inner-outer)/2);
-</script>
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+<style>
+body {font-family: Helvetica, Arial, sans-serif;}
+h1 {font-size: 20px;}
+div {width: 100%;}
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+</style></head><body>
+<div id="main" style="width: 1366px; margin: auto;">
+    <img src="../20.png" usemap="#map_1" width='100%'>
+    <map name="map_1">
+       <area shape="rect" coords="286, 1809, 661, 1880" 
+href="https://dsdpdemo.github.io/1/"
+            alt="相關連結1" 
+            title="相關連結1" 
+    />
+
+       <area shape="rect" coords="287, 1881, 665, 1944" 
+href="https://play.google.com/store/apps/details?id=com.esri.arcgis.android.idt.EPA.HL&hl=zh_TW"
+            alt="相關連結2" 
+            title="相關連結2" 
+    />
+       <area shape="rect" coords="289, 1945, 653, 1999" 
+href="https://itunes.apple.com/tw/app/%E7%92%B0%E5%A2%83%E5%8D%B3%E6%99%82%E9%80%9A/id585493633?mt=8"
+            alt="相關連結3" 
+            title="相關連結3" 
+    />
+
+       <area shape="rect" coords="289, 2000, 648, 2061" 
+href="https://dsdpdemo.github.io/11/"
+            alt="相關連結4" 
+            title="相關連結4" 
+    />
+
+              <area shape="rect" coords="290, 2063, 651, 2125" 
+href="https://dsdpdemo.github.io/19/"
+            alt="相關連結5" 
+            title="相關連結5" 
+    />
+       
+    <area shape="rect" coords="275, 1, 475, 41" 
+    href="https://dsdpdemo.github.io/%E5%85%A5%E5%8F%A3%E9%A0%81/"
+            alt="入口頁" 
+            title="入口頁" 
+    />
+
+    <area shape="rect" coords="998, 71, 1087, 131" href="https://social-plugins.line.me/lineit/share?url=https://dsdpdemo.github.io/20/"/>
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
