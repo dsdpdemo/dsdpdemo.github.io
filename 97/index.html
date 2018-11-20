@@ -1,9 +1,24 @@
-<script type="text/javascript" src="../jquery.min.js"></script> 
-<div id="mydiv" style="overflow:auto; overflow-y:hidden;width:100%">
-   <img id="im" src="../97.png" />
-</div>
-<script type="text/javascript"> 
-var outer=document.getElementById('mydiv').offsetWidth
-var inner=document.getElementById('im').offsetWidth;
-$('#mydiv').scrollLeft((inner-outer)/2);
-</script>
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+<style>
+body {font-family: Helvetica, Arial, sans-serif;}
+h1 {font-size: 20px;}
+div {width: 100%;}
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+</style></head><body>
+<div id="main" style="width: 1366px; margin: auto;">
+    <img src="../97.png" usemap="#map_1" width='100%'>
+    <map name="map_1">
+
+    <area shape="rect" coords="275, 1, 470, 41" 
+    href="https://dsdpdemo.github.io/98/"
+            alt="入口頁" 
+            title="入口頁" 
+    
+    />
+    <area shape="rect" coords="998, 51, 1087, 131" href="https://social-plugins.line.me/lineit/share?url=https://dsdpdemo.github.io/15/"/>
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
