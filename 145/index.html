@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<meta property="og:title" content="標題"/> 
+<title>標題</title>
+
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+<style>
+body {font-family: Helvetica, Arial, sans-serif;}
+h1 {font-size: 20px;}
+div {width: 100%;}
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+</style></head><body>
+<div id="main" style="width: 1366px; margin: auto;">
+    <img src="../145.png" usemap="#map_1" style="width: 1366px; max-width: 100%; height: auto;">
+    <map name="map_1">
+       
+    <area shape="rect" coords="181, 1, 520, 51" 
+    href="https://dsdpdemo.github.io/98/"
+            alt="入口頁" 
+            title="入口頁" />
+    <area shape="rect" coords="1057, 91, 1121, 141" 
+            alt="LINE分享" 
+            title="LINE分享" 
+    href="https://social-plugins.line.me/lineit/share?url=https://dsdpdemo.github.io/145/"/>
+    
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
