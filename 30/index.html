@@ -1,9 +1,20 @@
-<script type="text/javascript" src="../jquery.min.js"></script> 
-<div id="mydiv" style="overflow:auto; overflow-y:hidden;width:100%">
-   <img id="im" src="../30.png" />
-</div>
-<script type="text/javascript"> 
-var outer=document.getElementById('mydiv').offsetWidth
-var inner=document.getElementById('im').offsetWidth;
-$('#mydiv').scrollLeft((inner-outer)/2);
-</script>
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<script src="../jquery.min.js"></script>
+<script src="../jquery.rwdImageMaps.js"></script>
+<style>
+body {font-family: Helvetica, Arial, sans-serif;}
+h1 {font-size: 20px;}
+div {width: 100%;}
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+</style></head><body>
+<div id="main" style="width: 1366px; margin: auto;">
+    <img src="../30.png" usemap="#map_1" style=“width: 1366px; margin: auto;”>
+    <map name=“map_1”>
+        <area href="https://dsdpdemo.github.io/98/"
+            alt="入口頁" 
+            title="入口頁" 
+            shape="rect" coords="0,0,1366,55" />
+    </map>
+</div><script>$(document).ready(function(e) {$('img[map_1]').rwdImageMaps();});</script></body></html>
